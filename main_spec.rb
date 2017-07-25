@@ -1,13 +1,13 @@
 require_relative './main'
 
 describe Puzzle do
-    describe '#initials' do
+    describe '.initials' do
         it 'returns initials' do
             expect(Puzzle.initials('hello world')).to eq 'HW'
         end
     end
     
-    describe '#expand' do
+    describe '.expand' do
         it 'expands something?' do
             expect(Puzzle.expand(345)).to eq "300 + 40 + 5"
             
