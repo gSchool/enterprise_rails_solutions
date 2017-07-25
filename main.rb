@@ -12,6 +12,6 @@ module Puzzle
     end
     
     def self.sequence_sum(start, finish, gap)
-        (start..finish).step(gap).to_a.sum
+        (start..finish).step(gap).sum
     end
 end
