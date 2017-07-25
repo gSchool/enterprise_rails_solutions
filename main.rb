@@ -10,4 +10,8 @@ module Puzzle
     def Puzzle.expand(number)
         number.digits.map.with_index {|digit, index| digit.to_s + '0'*index}.reverse.join(' + ')
     end
+    
+    def self.sequence_sum(start, finish, gap)
+        (start..finish).step(gap).to_a.sum
+    end
 end
